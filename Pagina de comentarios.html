@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios Rosados - Jefferson Fuenmayor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #ffd6e6; /* Light pink background */
+            color: #663399; /* Rosy purple text color */
+        }
+
+        h2 {
+            color: #663399; /* Rosy purple heading color */
+        }
+
+        .comments-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffe6f2; /* Light rose container background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ffb3d9; /* Lighter rose border */
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #ffd9eb; /* Light rose comment background */
+        }
+
+        .comment-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #9966cc; /* Lighter rosier purple author name color */
+        }
+
+        .comment-date {
+            color: #cc99ff; /* Lighter rosier purple date color */
+        }
+
+        .comment-text {
+            margin-top: 0;
+            color: #663399; /* Rosy purple text color */
+        }
+
+        .comment-form {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffe6f2; /* Light rose form background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comment-form label,
+        .comment-form textarea,
+        .comment-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .comment-form textarea {
+            resize: vertical;
+            padding: 10px;
+        }
+
+        .comment-form button {
+            background-color: #ff66b2; /* Darker rose button background */
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .comment-form button:hover {
+            background-color: #ff3385; /* Even darker rose on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="comments-container">
+      
+        <div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Rose99:</span>
+                <span class="comment-date">1 de diciembre de 2023</span>
+            </div>
+            <p class="comment-text">Qué hermoso dia</p>
+        </div>
+
+        <div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">PinkLover:</span>
+                <span class="comment-date">30 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">El rosado es mi color favorito</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">RosyChat:</span>
+                <span class="comment-date">29 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">Quiero comer helado de fresa</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">GirlyCoder:</span>
+                <span class="comment-date">28 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">:) :) :) :) :) :)</p>
+        </div>
+		
+		<div class="comment">
+            <div class="comment-info">
+                <span class="comment-author">Pinky23:</span>
+                <span class="comment-date">25 de noviembre de 2023</span>
+            </div>
+            <p class="comment-text">Quiero graduarme ya</p>
+        </div>
+
+    </div>
+
+    <div class="comment-form">
+        <h2>Deja un comentario</h2>
+        <form action="#" method="post">
+            <label for="author">Nombre:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="submit">Publicar comentario</button>
+        </form>
+    </div>
+
+</body>
+</html>
